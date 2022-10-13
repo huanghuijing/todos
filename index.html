@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos App</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!-- 根结点 -->
+    <div id="root">
+        <!-- 表头 -->
+        <div class="title">
+            <h1>Todos</h1>
+        </div>
+
+        <!-- 内容页有三部分 -->
+        <div class="content">
+
+            <!-- input标签创建一个新的todo -->
+            <div class="create-todo">
+                <input type="text" id="new-todo" placeholder="What needs to be done?" />
+            </div>
+
+            <!-- 
+                一、设置一个ul，里面每个li代表一行todo内容
+                二、每一行todo含
+                    1、checkbox
+                    2、input text
+                    3、删除image 
+            -->
+            <div class="todo">
+                <!--    <ul id="todo-list">
+                    <li>
+                        <div class="display" >
+                            <input type="checkbox" class="checkbox">
+                            <div class="todo-content"></div>
+                            <span class="todo-destroy"></span>
+                        </div>
+                    </li>
+                </ul> -->
+            </div>
+
+            <!-- todo统计 -->
+            <div class="todo-stats">
+
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

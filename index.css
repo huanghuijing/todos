@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e0e0e0;
+}
+
+#root {
+  width: 420px;
+  margin: 0 auto;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root .title {
+  text-align: center;
+  padding: 40px 0 30px 0;
+  font-weight: bold;
+}
+
+.content {
+  text-align: center;
+  padding: 0 10px 20px 10px;
+}
+
+#new-todo {
+  width: 380px;
+  font-size: 30px;
+  padding: 5px;
+}
+
+::placeholder{
+  font-style: italic;
+  font-size: 25px;
+  color: #c0c0c0;
+  padding: 5px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.display {
+  margin: 10px 5px;
+  padding: 10px 10px;
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.todo-content {
+  display: flex;
+  flex: 1;
+  font-size: 20px;
+  color: #323232;
+}
+
+.todo-content.checked {
+  text-decoration: line-through;
+  color: #a0a0a0;
+}
+
+.checkbox {
+  width: 13px;
+  height: 13px;
+  margin-right: 8px;
+  align-self: center;
+}
+
+#todo-list .todo-destroy {
+  display: block;
+  /* position: absolute; */
+  right: 5px;
+  top: 14px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: no-repeat 0 0 url("./destroy.png");
+}
+
+#todo-list .todo-destroy:hover{
+  background-position: 0 -20px;
+}
+
+.todo-stats {
+  display: none;
+} 
+
+.todo-stats.active{
+  display: flex;
+  font-size: 12px;
+} 
+
+.todo-count{
+  display: flex;
+  flex: 1;
+  text-align: left;
+  padding: 0 0 0 8px;
+  color: #777;
+}
+
+.todo-stats a{
+  display: none;
+}
+
+.todo-stats a.active{
+  display: block;
+  display: flex;
+  text-align: right;
+  color: #777777;
+}
+
+.todo-stats a.active:hover{
+  color: #336699;
+}
+
+
+
